@@ -8,6 +8,15 @@
     <meta http-equiv="Content-type" content="text/html" ; charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial scale=1" />
     <style type="text/css">
+        @font-face {
+            font-family: MyFont;
+            src: local("akbar.tff"), url(akbar.ttf);
+        }
+        
+        .whole-body {
+            font-family: MyFont;
+        }
+        
         h1 {
             color: rgb(255, 217, 15);
             font-size: 250%;
@@ -32,10 +41,19 @@
         #first-section {
             background-color: rgb(66, 79, 70);
         }
+        
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
-<body>
+<body class="whole-body">
     <div id="first-section">
 
         <h1 id="top">This is my first webpage.</h1>
@@ -90,7 +108,7 @@
 
                     </select>
             </p>
-            <a href="http://www.google.com" class="general">Click here to check the price of doughnut.</a>
+            <a href="http://www.google.com" target="_blank">Click here to check the price of doughnut.</a>
             <p class="Doughnuts"><strong> What is your email address so that we can organize?</strong><br>Email:<input type="email" placeholder="Email Address"> <input type="submit" value="Submit"></p>
         </form>
         <h3 class="Doughnuts">Number of doughnuts received so far:</h3>
