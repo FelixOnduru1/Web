@@ -3,8 +3,8 @@
 <head>
 
     <title>Technology - BBC News</title>
-
-    <style type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type=text/css>
         #topbar {
             width: 1250px;
             height: 40px;
@@ -81,6 +81,7 @@
             background-color: #BB1919;
             height: 100px;
             width: 100%;
+            margin: 0;
         }
         
         #news-innerbar {
@@ -112,6 +113,104 @@
             text-decoration: underline;
         }
         
+        #more-white {
+            color: #FFFFFF;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+        
+        #news-innerbar2 span:hover {
+            background-color: #1E1E1E;
+        }
+        
+        #page-container {
+            width: 1250px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #404040;
+            font-weight: normal;
+            margin-top: 10px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            border-bottom: 3px #BB1919 solid;
+            width: 43px;
+        }
+        
+        #trump-box {
+            width: 900px;
+        }
+        
+        #trump-image {
+            float: left;
+            margin-right: 10px;
+        }
+        
+        #trump-text1 {
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #trump-link a {
+            color: #1E1E1E;
+            text-decoration: none;
+        }
+        
+        #trump-link a:hover {
+            color: #1380A1;
+            text-decoration: underline;
+        }
+        
+        #trump-link-section2 {
+            color: #1E1E1E;
+            text-decoration: none;
+        }
+        
+        #clock {
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        
+        #clock a {
+            text-decoration: none;
+            color: #404040;
+        }
+        
+        #clock a:hover {
+            text-decoration: none;
+            color: #404040;
+        }
+        
+        #hours {
+            padding: 1px;
+        }
+        
+        #us-canada {
+            padding-left: 5px;
+            border-left: 1px #404040 solid;
+        }
+        
+        #us-canada a:hover {
+            text-decoration: underline;
+            color: #1380A1;
+        }
+        
+        #bullet {
+            margin-top: 5px;
+        }
+        
+        #trump-content {
+            font-weight: bold;
+            padding-top: 40px;
+        }
+        
+        #trump-content1 {
+            padding: 5px;
+        }
     </style>
 
 </head>
@@ -186,14 +285,83 @@
                 <a href="">In Pictures</a>
                 <a href="">Reality Check</a>
                 <a href="">Newsbeat</a>
-                <span>More</span>
-                <img src="images/dropdown-arrow-white.PNG" alt="">
-            </div>
-        </div>
+                <span id="more-white">More
+                <img src="images/dropdown-arrow-white.PNG" alt=""></span>
 
+            </div>
+
+        </div>
 
     </div>
 
+    <div class="clear"></div>
+
+    <div id="page-container">
+
+        <div id="main-article">
+
+            <h2>Tech</h2>
+            <div id="trump-box">
+                <div id="trump-link">
+                    <a href="">
+                        <div id="trump-image">
+                            <img src="images/trump.PNG" alt="">
+                        </div>
+                        <div>
+                            Twitter permanently suspends trumps account
+                        </div>
+                        <div id="trump-link-section2">
+                            The social media giant bans the US president "due to the risk of further incitement violence".
+                        </div>
+                    </a>
+                </div>
+                <div id="clock">
+                    <a href="">
+
+                        <i class="fa fa-clock-o"></i>
+                        <span id="hours">10h</span>
+
+                    </a>
+                    <a id="us-canada" href="">
+                        <span>
+                            US & Canada
+                        </span>
+                    </a>
+                </div>
+                <div id="trump-content">
+                    <div id="trump-content1">
+                        <img src="images/bullet-point.PNG" alt="">
+                        <a href="">
+                            
+                            Trump's Twitter downfall
+                            
+                        </a>
+
+
+
+                    </div>
+                    <div>
+                        <img src="images/bullet-point.PNG" alt="">
+                        <a href="">
+                            
+                            Questions mount over security Capitol failure
+                            
+                        </a>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
 </body>
 
 
