@@ -6,7 +6,7 @@
 
     <style type="text/css">
         #topbar {
-            width: 125 0px;
+            width: 1250px;
             height: 40px;
             margin: 0 auto;
         }
@@ -39,7 +39,7 @@
             font-size: 90%;
             position: relative;
             top: 13px;
-            padding-right: 80px;
+            padding-right: 50px;
         }
         
         .right-signin {
@@ -50,9 +50,70 @@
         }
         
         #dropdown-arrow {
-            float: left;
+            margin-left: 50px;
         }
+        
+        #searchbox {
+            background-color: #E4E4E4;
+            border: none;
+            width: 150px;
+            height: 22px;
+            margin-top: 9px;
+            margin-bottom: 9px;
+            margin-left: 15px;
+            float: left;
+            color: #848484;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        
+        #searchicon {
+            margin-top: 9px;
+            height: 22px;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        #news-outerbar {
+            border-top: 1px #CCCCCC solid;
+            background-color: #BB1919;
+            height: 100px;
+            width: 100%;
+        }
+        
+        #news-innerbar {
+            width: 1250px;
+            height: 40px;
+            margin: 0 auto;
+            color: #FFFFFF;
+            font-size: 40px;
+            padding-top: 10px;
+        }
+        
+        #news-innerbar2 {
+            width: 1250px;
+            height: 40px;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+        
+        #news-innerbar2 a {
+            color: #FFFFFF;
+            border-right: 1px #b37a7a9a solid;
+            font-size: 13px;
+            text-decoration: none;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        #news-innerbar2 a:hover {
+            text-decoration: underline;
+        }
+        
     </style>
+
 </head>
 
 <body>
@@ -89,13 +150,50 @@
             <span>Culture</span>
         </div>
         <div class="topbar-section right-signin">
-            <span>More</span>
-            <img id="dropdown-arrow" src="images/dropdown-arrow.PNG" alt="">
+            <span>More 
+                <img id="dropdown-arrow" src="images/dropdown-arrow.PNG" alt="">
+            </span>
         </div>
-        <div class="topbar-section right-signin">
-            <span>Search</span>
+        <div class="topbar-section">
+            <input id="searchbox" type="text" value="Search">
+            <input type="image" id="searchicon" src="images/search-icon.PNG" alt="">
         </div>
+
+
+
     </div>
+
+    <div class="clear"></div>
+
+    <div id="news-outerbar">
+        <div id="news-innerbar">
+            NEWS
+        </div>
+        <div id="news-innerbar2">
+            <div>
+                <a href="">Home</a>
+                <a href="">Coronavirus</a>
+                <a href="">Video</a>
+                <a href="">World</a>
+                <a href="">UK</a>
+                <a href="">Business</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Stories</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Health</a>
+                <a href="">World News TV</a>
+                <a href="">In Pictures</a>
+                <a href="">Reality Check</a>
+                <a href="">Newsbeat</a>
+                <span>More</span>
+                <img src="images/dropdown-arrow-white.PNG" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
 </body>
 
 
