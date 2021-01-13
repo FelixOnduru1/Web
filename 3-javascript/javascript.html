@@ -1,0 +1,27 @@
+<html>
+
+
+<head>
+
+    <title>Javasript</title>
+</head>
+
+<body>
+    <p id="text">Hello There!</p>
+    <button id="myButton"> Click Me!</button>
+    <p id="secondParagraph">This is my portfolio</p>
+    <button id="myButton2"> Click Me!</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function() {
+            document.getElementById("text").innerHTML = "My name is Felix"
+        }
+        document.getElementById("myButton2").onclick = function() {
+            document.getElementById("secondParagraph").innerHTML = document.getElementById("secondParagraph").innerHTML + ". Feel free to look around."
+        }
+    </script>
+
+
+</body>
+
+
+</html>
