@@ -4,214 +4,7 @@
 
     <title>Technology - BBC News</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <style type=text/css>
-        #topbar {
-            width: 1250px;
-            height: 40px;
-            margin: 0 auto;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #logo {
-            margin-top: 10px;
-            margin-right: 15px;
-            float: left;
-        }
-        
-        .topbar-section {
-            float: left;
-            border-left: 1px #cccccc solid;
-            height: 100%;
-        }
-        
-        #signin-icon {
-            margin: 10px 5px 0px 15px;
-            float: left;
-        }
-        
-        #signin-text {
-            font-weight: bold;
-            font-size: 90%;
-            position: relative;
-            top: 13px;
-            padding-right: 50px;
-        }
-        
-        .right-signin {
-            font-weight: bold;
-            font-size: 90%;
-            padding: 13px 20px 0px 20px;
-            height: 27px;
-        }
-        
-        #dropdown-arrow {
-            margin-left: 50px;
-        }
-        
-        #searchbox {
-            background-color: #E4E4E4;
-            border: none;
-            width: 150px;
-            height: 22px;
-            margin-top: 9px;
-            margin-bottom: 9px;
-            margin-left: 15px;
-            float: left;
-            color: #848484;
-            font-size: 14px;
-            padding-left: 5px;
-        }
-        
-        #searchicon {
-            margin-top: 9px;
-            height: 22px;
-        }
-        
-        .clear {
-            clear: both;
-        }
-        
-        #news-outerbar {
-            border-top: 1px #CCCCCC solid;
-            background-color: #BB1919;
-            height: 100px;
-            width: 100%;
-            margin: 0;
-        }
-        
-        #news-innerbar {
-            width: 1250px;
-            height: 40px;
-            margin: 0 auto;
-            color: #FFFFFF;
-            font-size: 40px;
-            padding-top: 10px;
-        }
-        
-        #news-innerbar2 {
-            width: 1250px;
-            height: 40px;
-            margin: 0 auto;
-            padding-top: 15px;
-        }
-        
-        #news-innerbar2 a {
-            color: #FFFFFF;
-            border-right: 1px #b37a7a9a solid;
-            font-size: 13px;
-            text-decoration: none;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
-        
-        #news-innerbar2 a:hover {
-            text-decoration: underline;
-        }
-        
-        #more-white {
-            color: #FFFFFF;
-            font-size: 13px;
-            padding-left: 10px;
-        }
-        
-        #news-innerbar2 span:hover {
-            background-color: #1E1E1E;
-        }
-        
-        #page-container {
-            width: 1250px;
-            margin: 0 auto;
-        }
-        
-        h2 {
-            color: #404040;
-            font-weight: normal;
-            margin-top: 10px;
-            padding-bottom: 5px;
-            font-size: 20px;
-            border-bottom: 3px #BB1919 solid;
-            width: 43px;
-        }
-        
-        #trump-box {
-            width: 900px;
-        }
-        
-        #trump-image {
-            float: left;
-            margin-right: 10px;
-        }
-        
-        #trump-text1 {
-            font-size: 25px;
-            font-weight: bold;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-        }
-        
-        #trump-link a {
-            color: #1E1E1E;
-            text-decoration: none;
-        }
-        
-        #trump-link a:hover {
-            color: #1380A1;
-            text-decoration: underline;
-        }
-        
-        #trump-link-section2 {
-            color: #1E1E1E;
-            text-decoration: none;
-        }
-        
-        #clock {
-            font-size: 14px;
-            padding-top: 10px;
-        }
-        
-        #clock a {
-            text-decoration: none;
-            color: #404040;
-        }
-        
-        #clock a:hover {
-            text-decoration: none;
-            color: #404040;
-        }
-        
-        #hours {
-            padding: 1px;
-        }
-        
-        #us-canada {
-            padding-left: 5px;
-            border-left: 1px #404040 solid;
-        }
-        
-        #us-canada a:hover {
-            text-decoration: underline;
-            color: #1380A1;
-        }
-        
-        #bullet {
-            margin-top: 5px;
-        }
-        
-        #trump-content {
-            font-weight: bold;
-            padding-top: 40px;
-        }
-        
-        #trump-content1 {
-            padding: 5px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="bbc.css">
 
 </head>
 
@@ -307,13 +100,17 @@
                         <div id="trump-image">
                             <img src="images/trump.PNG" alt="">
                         </div>
-                        <div>
+                        <div id="trump-header">
                             Twitter permanently suspends trumps account
                         </div>
-                        <div id="trump-link-section2">
-                            The social media giant bans the US president "due to the risk of further incitement violence".
-                        </div>
+
+
+
                     </a>
+                    <p>
+                        The social media giant bans the US president "due to the risk of further incitement violence".
+
+                    </p>
                 </div>
                 <div id="clock">
                     <a href="">
@@ -322,7 +119,7 @@
                         <span id="hours">10h</span>
 
                     </a>
-                    <a id="us-canada" href="">
+                    <a class="category" href="">
                         <span>
                             US & Canada
                         </span>
@@ -340,7 +137,7 @@
 
 
                     </div>
-                    <div>
+                    <div id="trump-content2">
                         <img src="images/bullet-point.PNG" alt="">
                         <a href="">
                             
@@ -357,7 +154,158 @@
 
 
             </div>
+            <div class="clear"></div>
 
+
+            <div id="sub-articles-1">
+                <div id="sub-article1">
+                    <div>
+                        <a href="">
+                            <img src="images/sub-article1.PNG" alt="">
+                            <h4>YouTube suspends Donald Trump's channel</h4>
+
+                        </a>
+                        <p>
+                            The Google-owned service said the president had broken its rules over the incitement of violence.
+
+                        </p>
+                    </div>
+                    <div class="clock-category">
+                        <p>
+                            <i class="fa fa-clock-o"></i>
+                            <span id="hours">6h</span>
+                            <a class="category" href="">
+                                <span>
+                                    Technology
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="sub-article2">
+                    <a href="">
+                        <img src="images/sub-article2.PNG" alt="">
+                        <h4>When AI has an overactive imagination</h4>
+                    </a>
+                    <p>
+                        Google DeepDream explores how artificial intelligence can produce dream-like art.
+                    </p>
+                    <div class="clock-category">
+                        <p>
+                            <i class="fa fa-clock-o"></i>
+                            <span id="hours">1h</span>
+                            <a class="category" href="">
+                                <span>
+                                    Technology
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id=sub-article3>
+                    <a href="">
+                        <img src="images/sub-article3.PNG" alt="">
+                        <h4>EU must 'move at speed' on space broadband network</h4>
+                    </a>
+                    <p>
+                        The European Commission sets ambitious targets for its satellite secure communications project.
+                    </p>
+                    <div class="clock-category">
+                        <p>
+                            <i class="fa fa-clock-o"></i>
+                            <span id="hours">1h</span>
+                            <a class="category" href="">
+                                <span>
+                                    Science & Environment
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="clear"></div>
+            <div id="sub-articles-1">
+                <div id="sub-article1">
+                    <div>
+                        <a href="">
+                            <img src="images/sub-article4.PNG" alt="">
+                            <h4>Is this the world's smartest facemask?</h4>
+
+                        </a>
+                        <p>
+                            Gaming company Razer claims to have made the world's most technologically advanced mask.
+
+                        </p>
+                    </div>
+                    <div class="clock-category">
+                        <p>
+                            <i class="fa fa-clock-o"></i>
+                            <span id="hours">10h</span>
+                            <a class="category" href="">
+                                <span>
+                                    Technology
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="sub-article2">
+                    <a href="">
+                        <img src="images/sub-article5.PNG" alt="">
+                        <h4>Amazon and Facebook staff warned of threats to safety</h4>
+                    </a>
+                    <p>
+                        Leaked memos suggest there are fears that employees could be targeted in US backlash against "bigtech".
+                    </p>
+                    <div class="clock-category">
+                        <p>
+                            <i class="fa fa-clock-o"></i>
+                            <span id="hours">16h</span>
+                            <a class="category" href="">
+                                <span>
+                                    Technology
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id=sub-article3>
+                    <a href="">
+                        <img src="images/sub-article6.PNG" alt="">
+                        <h4>Whatsapp users flock to rival message platforms</h4>
+                    </a>
+                    <p>
+                        Millions have signed up to Signal and Telegram after whatsapp announced an update to its terms.
+                    </p>
+                    <div class="clock-category">
+                        <p>
+                            <i class="fa fa-clock-o"></i>
+                            <span id="hours">19h</span>
+                            <a class="category" href="">
+                                <span>
+                                    Science & Environment
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
 
         </div>
 
