@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>jQuery</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style>
+        #circle {
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        
+        #square1 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        
+        #square2 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="circle">
+
+    </div>
+    <div id="square1">
+
+    </div>
+    <div id="square2">
+
+    </div>
+
+
+
+    <p>I just want to disappear.</p>
+    <button id="disappearButton">Toggle text</button>
+
+
+
+    <script type="text/javascript">
+        $("#circle").hover(function() {
+            $(this).animate({
+                width: "200px",
+                height: "200px",
+
+            }, 2000, function() {
+                $(this).css("background-color", "red")
+            })
+        })
+        $("#disappearButton").click(function() {
+            if ($("p").css("display") == "none") {
+
+                $("p").fadeIn()
+            } else {
+                $("p").fadeOut()
+            }
+
+
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>
