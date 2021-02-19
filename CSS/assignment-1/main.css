@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: blue;
+    font-family: sans-serif;
+}
+
+code {
+    font-family: monospace;
+    color: red;
+}
+
+.second-list {
+    color: green;
+}
+
+
+/*This combinator gives all <li> elements except the first one a black background and white text color*/
+
+li+li {
+    background-color: black;
+    color: white;
+}
+
+
+/*This combinator gives all <li> elements inside the <ol> a black background and white text color*/
+
+ol li {
+    background-color: black;
+    color: white;
+}
