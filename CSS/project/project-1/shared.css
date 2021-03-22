@@ -7,13 +7,24 @@ body {
     margin: 0;
 }
 
+.back-drop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .main-header {
     background-color: #2DDF5C;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     z-index: 1;
 }
 
@@ -27,8 +38,8 @@ body {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    height: 23px;
-    font-size: 23px;
+    height: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .main-header__brand img {
@@ -50,14 +61,14 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 .main-nav__item a {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    padding: 3px 0px;
+    padding: 0.2rem 0px;
 }
 
 .main-nav__item a:hover,
@@ -69,7 +80,7 @@ body {
 .main-nav__item--cta a {
     color: white;
     background-color: #FF1B68;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -82,8 +93,8 @@ body {
 
 .main-footer {
     background: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -95,7 +106,7 @@ body {
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -113,7 +124,7 @@ body {
     color: white;
     font: inherit;
     border: 1px #0e4f1f solid;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
