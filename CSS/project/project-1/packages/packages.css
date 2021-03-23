@@ -87,3 +87,24 @@ main {
 #package-premium .package-category__subtitle {
     color: #bbb;
 }
+
+@media(min-width: 40rem) {
+    main {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(min-width: 1500px) {
+    .package-category {
+        border-left: 4px solid #0e4f1f;
+    }
+    #package-free {
+        border-right: 4px solid #0e4f1f;
+    }
+    #package-free:hover,
+    #pachage-free:active {
+        border-right-color: #FF1B68;
+    }
+}
