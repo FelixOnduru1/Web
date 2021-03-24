@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    min-height: calc(100vh-3.5rem-8rem);
+    min-height: calc(100vh - 3.5rem - 8rem);
     margin-top: 3.5rem;
 }
 
@@ -182,6 +182,14 @@ main {
 .button:focus-visible,
 .button:focus {
     outline: none;
+}
+
+button[disabled],
+button[disabled]:hover {
+    cursor: not-allowed;
+    background: #ccc;
+    border: #a1a1a1;
+    color: #a1a1a1;
 }
 
 .mobile-nav {
