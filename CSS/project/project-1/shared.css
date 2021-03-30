@@ -122,6 +122,10 @@ main {
     border: none;
 }
 
+.main-nav__item--cta {
+    animation: wiggle 200ms 3s 8 none;
+}
+
 @media(min-width: 40rem) {
     .toggle-button {
         display: none;
@@ -224,6 +228,8 @@ button[disabled]:hover {
 
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 @media(min-width: 40rem) {
@@ -233,5 +239,17 @@ button[disabled]:hover {
     .main-footer__links {
         flex-direction: row;
         justify-content: center;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
     }
 }
