@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(237, 224, 223) 50%);
+}
+
+#ellipse {
+    border-radius: 50%;
+    background-color: rgb(237, 224, 223);
+    position: absolute;
+    left: -10rem;
+    top: 8rem;
+    width: 20rem;
+    height: 20rem;
+    z-index: -10;
+}
+
+#page__title {
+    position: absolute;
+    left: 4rem;
+    top: 10rem;
+    font-size: 5rem;
+}
+
+#collection__description {
+    position: absolute;
+    bottom: 3rem;
+    left: 30rem;
+    width: 11.5rem;
+    font-size: 0.8rem;
+}
+
+#collection__description--line {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: -0.5rem;
+    width: 14rem;
+    height: 1px;
+}
+
+.collection__image img {
+    position: absolute;
+    top: 2.5rem;
+    left: 60%;
+    width: 20rem;
+}
+
+.rectangle {
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    position: absolute;
+    left: 770px;
+    top: 120px;
+    width: 420px;
+    height: 420px;
+    z-index: -10;
+    transform: rotateZ(-50deg) skewX(-10deg);
+}
