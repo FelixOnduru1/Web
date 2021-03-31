@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "AdobeGaramondPro";
+    src: url("adobeGaramondProRegular.ttf")
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+.navigation {
+    color: black;
+    padding: 1rem;
+    font-family: "AdobeGaramondPro";
+    font-size: 1.25rem;
+}
+
+#navigation__line--top-left {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+    position: absolute;
+    left: 3rem;
+    top: 1.5rem;
+    width: 267px;
+    height: 1px;
+}
+
+#navigation__line--top-right {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+    right: 3rem;
+    top: 1.5rem;
+    position: absolute;
+    width: 267px;
+    height: 1px;
+}
+
+#navigation__name {
+    text-align: center;
+}
+
+#navigation__twitter {
+    font-size: 1rem;
+    text-align: left;
+    transform: matrix(2.25364884925431e-15, -1.10288532247699, 1.10288532247699, 0, 0, 0);
+    position: absolute;
+    bottom: 25%;
+    left: 1.5rem;
+}
+
+#navigation__instagram {
+    font-size: 1rem;
+    text-align: left;
+    transform: matrix(2.25364884925431e-15, -1.10288532247699, 1.10288532247699, 0, 0, 0);
+    position: absolute;
+    bottom: 40%;
+}
+
+#navigation__left-line {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 50%;
+    left: 3rem;
+    width: 1px;
+    height: 155px;
+}
+
+#navigation__line--bottom-left {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+    position: absolute;
+    left: 3rem;
+    bottom: 1.5rem;
+    width: 267px;
+    height: 1px;
+}
+
+#navigation__see-all {
+    color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 1rem;
+    left: 48%;
+    text-align: center;
+    text-decoration: line-through;
+}
