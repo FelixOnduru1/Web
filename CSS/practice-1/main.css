@@ -133,6 +133,10 @@ img {
     max-height: 250px;
 }
 
+a {
+    color: #000;
+}
+
 #featured__item-1 {
     grid-area: featured__item-1;
 }

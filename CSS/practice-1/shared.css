@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+a {
+    color: #000;
+}
+
 .navigation {
     color: black;
     padding: 1rem;
